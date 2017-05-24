@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="WPFClient.views.MessageView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WPFClient.views"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Label x:Name="label" VerticalAlignment="Top" Height="32" Background="#FFCBCBCB"/>
+        <RichTextBox x:Name="messageInput" Height="52" VerticalAlignment="Bottom" Margin="0,0,62,0">
+        </RichTextBox>
+        <Button x:Name="button" Content="Send" Height="52" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="62" Click="SendClick"/>
+        <ScrollViewer x:Name="scroll" Margin="0,32,0,52">
+            <StackPanel x:Name="messages" />
+        </ScrollViewer>
+    </Grid>
+</UserControl>
